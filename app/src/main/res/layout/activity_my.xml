@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorName"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@drawable/background"
+                android:layout_width="match_parent"
+                android:layout_height="224dp"
+                android:id="@+id/imageView2" />
+
+            <ImageView
+
+                android:src="@drawable/head_portrait"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/iv_login"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:text="注册"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btnshape"
+                android:id="@+id/btn_add"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/iv_login"
+                android:layout_toEndOf="@+id/iv_login"
+                android:layout_marginTop="15dp" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="登录"
+                android:background="@drawable/btnshape"
+                android:textColor="#ffffff"
+                android:layout_alignBottom="@+id/btn_add"
+                android:layout_toStartOf="@+id/iv_login" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/my_selector"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/ll_indent"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center|right"
+                android:src="@drawable/my_all_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="全部订单"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/paysdk2_arrow_right"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include  layout="@layout/my_orderinfo"/>
+        <!---->
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/my_selector"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/ll_wallet"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/my_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="我的钱包"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/paysdk2_arrow_right"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <include layout="@layout/my_wallet"/>
+
+
+        <!---->
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/my_selector"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/ll_my_kxye"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/my_kxye_ico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="科学育儿"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/paysdk2_arrow_right"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!---->
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/my_selector"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/ll_collection"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/my_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="我的收藏"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/paysdk2_arrow_right"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!---->
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/my_selector"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/ll_history"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/my_browsing_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="浏览历史"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/paysdk2_arrow_right"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!---->
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/my_selector"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/ll_address"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/my_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="地址管理"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/paysdk2_arrow_right"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <!---->
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/my_selector"
+            android:layout_marginTop="20dp"
+            android:id="@+id/ll_service"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/my_customer_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="呼叫服务"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/paysdk2_arrow_right"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!---->
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/my_selector"
+            android:layout_marginTop="1dp"
+            android:id="@+id/ll_feedback"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/my_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="用户反馈"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/paysdk2_arrow_right"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

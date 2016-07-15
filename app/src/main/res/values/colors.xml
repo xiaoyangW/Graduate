@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fc6927</color>
+    <color name="colorPrimaryDark">#f5611e</color>
+    <color name="colorAccent">#fc6927</color>
+    <color name="colorNameCheck">#ff4a4a</color>
+    <color name="colorName">#f1ecec</color>
+    <color name="colorselector">#effafa</color>
+    <color name="backcolor">#ffffff</color>
+    <color name="find_passwordbar_bg">#fd3434</color>
+    <color name="main_color">#c92216</color>
+    <color name="textcolor">#000</color>
+
+</resources>
